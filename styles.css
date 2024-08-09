@@ -1,0 +1,223 @@
+* html {
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #040308;
+    --background: beige;
+    --primary: #f8c673;
+    --secondary: #998262;
+    --accent: #c4a56d;    
+}
+
+body {
+    background-color: var(--background);
+    padding: 0%;
+    margin: 0%;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+#logo {
+    filter: saturate(60%) hue-rotate(210deg) brightness(150%);
+    height: 40px;
+    width: auto;
+    padding: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.link, .link:visited, .link:active {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: var(--background);
+    padding: 0.4rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px var(--accent);
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ece4cc;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 100px;
+    margin-right: 1.5rem;
+}
+
+.link:hover {
+    background-color: var(--primary);
+    box-shadow: 5px 5px var(--text);
+    color: var(--text);
+}
+
+.info {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    margin: 100px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#crocheting {
+    text-transform: uppercase;
+}
+
+.right > img {
+    border-radius: 10px;
+    filter: sepia(100%);
+    width: 400px;
+    margin-right: -40px;
+}
+
+#shop {
+    background-color: var(--secondary);
+    padding: 20px;
+    height: 110vh;
+    margin: 100px auto;
+}
+
+#head-shop {
+    margin: 2.5em 7em;
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--background);
+    text-transform: uppercase;
+    border: dashed 5px var(--primary);
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin-top: -20px;
+}
+
+.product {
+    padding: 10px;
+    background-color: var(--primary);
+    box-shadow: 7px 7px var(--accent);
+    margin-bottom: 50px;
+}
+
+.product p {
+    color: #5f5133;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product img {
+    filter: sepia(60%) contrast(80%);
+}
+
+.pricing {
+    font-style: italic;
+}
+
+#quote {
+    background-color: var(--primary);
+    color: var(--secondary);
+    height: 100vh;
+    margin-top: 100px;
+    font-size: larger;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote h2 {
+    margin: auto 40px;
+    line-height: 200%;
+    border-top: solid 3px var(--accent);
+    border-bottom: solid 3px var(--accent);
+    padding: 5% 0;
+}
+
+#account {
+    padding: 1.5rem;
+    margin: 100px 20px;
+    border-radius: 10px;
+    height: 50vh;
+}
+
+.container-acc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    margin: 100px 20px;
+    border-radius: 10px;
+    color: var(--background);
+}
+
+.left h3  {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+}
+
+.left {
+    line-height: 10px;
+}
+
+.left p {
+    font-size: 0.9rem;
+}
+
+.acc-btn {
+    height: 50px;
+    width: 80px;
+    background-color: var(--background);
+    border-radius: 5px;
+    box-shadow: 5px 5px var(--accent);
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.acc-btn:hover {
+    background-color: var(--primary);
+    box-shadow: 5px 5px var(--text);
+    color: var(--text);
+}
+
+footer {
+    background-color: var(--accent);
+    position: relative;
+    height: 8vh;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+    color: var(--background);
+}
